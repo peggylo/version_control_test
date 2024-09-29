@@ -1,3 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+# 載入 .env 文件中的環境變量
+load_dotenv()
+
+# 讀取 test_key 環境變量
+test_key = os.getenv('test_key')
+print(f"測試環境變量: {test_key}")
+
 def 西元轉民國(西元年):
     return 西元年 - 1911
 
