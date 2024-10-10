@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-# 載入 .env 文件中的環境變量
+# 載入 .env 文件中的環境變量  這一行是為了讀取環境變量  再測試
 load_dotenv()
 
 # 讀取 test_key 環境變量
@@ -15,14 +15,14 @@ def 民國轉西元(民國年):
     return 民國年 + 1911
 
 while True:
-    選擇 = input("請選擇轉換類型好嗎 (1: 西元轉民國, 2: 民國轉西元, q: 退出): ")
+    選擇 = input("請選擇轉換類型 (1: 西元轉民國, 2: 民國轉西元, q: 退出): ")
     
     if 選擇 == 'q':
-        print("感謝使用,再見!")
+        print("感謝使用，再見！")
         break
     
     if 選擇 not in ['1', '2']:
-        print("無效的選擇,請重新輸入。")
+        print("無效的選擇，請重新輸入。")
         continue
     
     年份 = input("請輸入年份: ")
