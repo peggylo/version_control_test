@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-# 載入 .env 文件中的環境變量  這一行是為了讀取環境變量  再測試
+# 載入 .env 文件中的環境變量  這一行是為了讀取環境變量  再測試  測試一下終端機放上來  我改了一下喔喔喔喔
 load_dotenv()
 
 # 讀取 test_key 環境變量
